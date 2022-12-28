@@ -32,6 +32,9 @@ eger basarisiz olursa altaki DepesOfMethod'lu TEST calismaz
         //Sonuc yazısının amazon içerdiğini test edelim
         WebElement sonuc = driver.findElement(By.xpath("//*[@class='a-section a-spacing-small a-spacing-top-small']"));
         Assert.assertFalse(sonuc.getText().contains("amazon"));
+
+
+        //////////////////////////////////////////////////////////////////////////////
     }
 
 

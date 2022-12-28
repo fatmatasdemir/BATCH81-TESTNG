@@ -14,12 +14,9 @@ public class Log4jTest1 {
     logger.debug("LOG DEBUG");
     logger.error("LOG ERROR");
     logger.fatal("LOG FATAL");
+    logger.warn("LOG WARN");
+
 }
-
-
-
-
-
 
 
 

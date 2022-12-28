@@ -16,7 +16,7 @@ public class C02_DataProvider {
     }
     @Test (dataProvider = "kullanicilar")
     public void test01(String userEmail, String password) {
-        //https://www.bluerentalcars.com/ adresine git
+        //https://www.bluerentalcars.com/ adresine git  ////
         Driver.getDriver().get(ConfigReader.getProperty("brcUrl"));
         //login butonuna bas
         BrcPage brc = new BrcPage();

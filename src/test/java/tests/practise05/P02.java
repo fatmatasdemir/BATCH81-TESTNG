@@ -13,7 +13,7 @@ public class P02 extends TestBaseBeforeMethodAfterMethod {
     // 4. Mesajın "I am an alert box!" olduğunu doğrulayın.
     // 5. Açılır pencereyi kabul edin
     @Test
-    public void test01() {
+    public void test01() throws InterruptedException {
         // 1. "http://webdriveruniversity.com/Popup-Alerts/index.html" adresine gidin
         driver.get("http://webdriveruniversity.com/Popup-Alerts/index.html");
 
@@ -29,6 +29,7 @@ public class P02 extends TestBaseBeforeMethodAfterMethod {
 
         // 5. Açılır pencereyi kabul edin
         driver.switchTo().alert().accept();
+        Thread.sleep(3000);
     }
 
 

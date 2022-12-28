@@ -21,7 +21,7 @@ public class ödevTeam11 extends TestBaseBeforeMethodAfterMethod {
     //Yeni bir Class Olusturun : C03_SoftAssert
     WebDriverWait wait=new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5));
     @Test
-    public void test01(){
+    public void test01() throws InterruptedException {
 //"http://zero.webappsecurity.com/" Adresine gidin
         Driver.getDriver().get("http://zero.webappsecurity.com/");
 
@@ -40,6 +40,7 @@ public class ödevTeam11 extends TestBaseBeforeMethodAfterMethod {
 //Sign in tusuna basin
 
         Driver.getDriver().findElement(By.cssSelector("[type=\"submit\"]")).click();
+        //Thread.sleep(2000);
 
         // WebDriverWait wait=new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5));
         // wait.until(ExpectedConditions.visibilityOf())
@@ -56,7 +57,7 @@ public class ödevTeam11 extends TestBaseBeforeMethodAfterMethod {
         onlineBaking.click();
 
         Driver.getDriver().findElement(By.cssSelector("#pay_bills_link")).click();
-
+Thread.sleep(20000);
 
 //"Purchase Foreign Currency" tusuna basin
         Driver.getDriver().findElement(By.xpath("(//ul)[5]//li[3]")).click();
